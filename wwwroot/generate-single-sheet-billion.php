@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){ // if form is submitted, check for err
 		//-----------end modify php.ini settings
 		
 		//-----------RUN PROGRAM
-		require_once '../vendor/phpoffice/phpexcel/Classes/PHPExcel.php'; // load excel reader script
+		require_once '../vendor/autoload.php'reader script
 		$objPHPExcel = new PHPExcel();
 		$objReader = new PHPExcel_Reader_Excel5();
 		$objReader->setReadDataOnly(true);

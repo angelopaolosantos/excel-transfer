@@ -1,5 +1,8 @@
 {
 	"require": {
 		"phpoffice/phpexcel": "*"
-	}
+	},
+	"config": {
+                "optimize-autoloader": true
+        }
 }

@@ -182,7 +182,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 				ini_set('max_execution_time', 300);
 				error_reporting(E_ALL);
 			
-				require_once 'Classes/PHPExcel.php';
+				require_once '../vendor/autoload.php'
 				
 				$objPHPExcel = new PHPExcel();
 				$objReader = new PHPExcel_Reader_Excel5();
